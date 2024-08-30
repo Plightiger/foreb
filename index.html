@@ -438,22 +438,27 @@
                     <div class="left_bottom">
                         <div class="bottom_l">
                             <a href="#">
+                                <div class="bg"></div>
                                 <h3>EVENT</h3>
                                 <div class="line2"></div>
+                                
                                 <p>포레브에서 진행 중인
                                     <br>다양한 프로모션을 확인해 보세요
                                 </p>
                                 <img src="images/main/plusicon.png" alt="plusicon">
+                                
                             </a>
                         </div>
                         <div class="bottom_r">
                             <a href="#">
                                 <h3>BOOKS</h3>
                                 <div class="line2"></div>
+                                <div class="bg"></div>
                                 <p>원하는 도서를 검색해 찾고,
                                     <br>찾으시는 도서가 없으시다면 요청해 보세요
                                 </p>
                                 <img src="images/main/plusicon.png" alt="plusicon">
+                                
                             </a>
                         </div>
                     </div>
@@ -501,50 +506,50 @@
                 </h1>
             </div>
         </div>
-    </div>
         <!-- footer_E -->
-        <!-- wrap_E -->
-        <!-- swiper_js -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-                spaceBetween: 0,
-                loop: true,
-                autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: false,
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-            });
-        </script>
-        <script>
-            var swiper = new Swiper(".book_slide", {
-                direction: "vertical",
-                loop: true,
-                autoplay: {
-                    delay: 5000,
-                    disableOnInteraction: false,
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                    renderBullet: function (index, className) {
-                        return '<span class="' + className + '">' + (index + 1) + "</span>";
-                    }
-                },
-            });
-        </script>
-        <!-- jQuery오픈소스 -->
-        <script src="js/jquery-3.7.1.min.js"></script>
-        <!-- AOS js -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
+    </div>
+    <!-- wrap_E -->
+    <!-- swiper_js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 0,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".book_slide", {
+            direction: "vertical",
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + (index + 1) + "</span>";
+                }
+            },
+        });
+    </script>
+    <!-- jQuery오픈소스 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
