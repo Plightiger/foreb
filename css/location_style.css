@@ -1,0 +1,317 @@
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+em,
+img,
+small,
+strong,
+b,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section,
+summary,
+video {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+html {
+    font-size: 16px;
+    /* rem의 기준 */
+}
+
+body {
+    font-family: 'Pretendard';
+    font-size: 16px;
+    line-height: 26px;
+    color: #333;
+}
+
+#wrap {
+    min-width: 1400px;
+}
+/* header */
+#header {
+    background-color: #fff;
+    height: 100px;
+}
+
+.inner_header {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 23px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.gnb {
+    display: flex;
+    align-items: center;
+}
+
+.gnb>li {
+    position: relative;
+}
+
+.gnb>li>a {
+    padding: 30px 50px 39px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.gnb>li>:hover {
+    color: #64352D;
+}
+
+.gnb li:hover .submenu {
+    display: block;
+}
+/* submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 62px;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #64352D;
+    color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.submenu li a:hover {
+    background-color: #522820;
+}
+/* link */
+.link {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.link li.line::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    background-color: #aaa;
+    margin: 0 10px;
+    vertical-align: -1px;
+}
+/* banner */
+#banner {
+    height: 320px;
+    background: url(../images/sub/location/banner2.png) no-repeat center;
+}
+
+.banner_text {
+    height: 100%;
+    color: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Noto Sans KR';
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.banner_text h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.banner_text p {
+    font-size: 24px;
+    opacity: 80%;
+}
+/* container */
+#container {
+    width: 1320px;
+    margin: 0 auto 99px;
+}
+
+.title {
+    margin: 84px 0 107px;
+    text-align: center;
+    position: relative;
+}
+
+.title h1 {
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 65px;
+}
+
+.border {
+    width: 244px;
+    height: 14px;
+    background-color: #F4E8E1;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -125px;
+    z-index: -5;
+}
+
+.loca {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.loca img {
+    display: block;
+}
+
+.photo {
+    margin-bottom: 21px;
+}
+
+.info_wrap h3 {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 38px;
+    margin-bottom: 15px;
+}
+
+.info_wrap span {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    margin: 12px 0 6px;
+}
+
+.info_wrap div {
+    display: flex;
+    margin-bottom: 7px;
+}
+
+.info_wrap div img {
+    margin-right: 7px;
+}
+
+.service {
+    display: flex;
+    margin-top: 6px;
+    margin-bottom: 41px;
+}
+/* footer */
+#footer {
+    border-top: 2px solid #777;
+}
+
+.inner_footer {
+    box-sizing: border-box;
+    width: 1320px;
+    margin: 0 auto;
+    padding: 61px 83px 36px 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_link {
+    display: flex;
+}
+
+.footer_link li {
+    font-size: 14px;
+    font-weight: 800;
+    margin-right: 32px;
+}
+
+.footer_link li:nth-child(5) {
+    color: #64352D;
+}
+
+.info {
+    font-size: 12px;
+    margin: 32px 0 26px;
+    line-height: 20px;
+}
+
+.info p {
+    margin-right: 9px;
+    display: inline;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.copy {
+    color: #999;
+    font-family: 'S-CoreDream';
+    font-weight: 900;
+    font-size: 12px;
+    margin-bottom: 26px;
+}
+
+.sns {
+    display: flex;
+}
+
+.sns li {
+    margin-right: 21px;
+}
+
+.sns li a {
+    display: block;
+}
+
+.sns li a img {
+    display: block;
+    width: 100%;
+}
